@@ -27,6 +27,8 @@ public class EmpList {
 		Collections.reverse(al);
 		System.out.println(Collections.max(al));
 		System.out.println(Collections.min(al));
+		System.out.println("collections");
+		
 		
 		//for(int i=0;i<al.size();i++){
 		//System.out.println(al.get(i));
