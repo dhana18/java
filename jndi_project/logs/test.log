@@ -1,0 +1,44 @@
+invalid user
+in catch block
+invalid user
+in catch block
+about
+java.lang.SecurityException: User: admin123, failed to be authenticated.
+	at weblogic.common.internal.RMIBootServiceImpl.authenticate(RMIBootServiceImpl.java:116)
+	at weblogic.common.internal.RMIBootServiceImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:701)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:527)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:523)
+	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+invalid user
+in catch block
+invalid
+javax.naming.AuthenticationException: User: admin123, failed to be authenticated. [Root exception is java.lang.SecurityException: User: admin123, failed to be authenticated.]
+	at weblogic.jndi.internal.ExceptionTranslator.toNamingException(ExceptionTranslator.java:42)
+	at weblogic.jndi.WLInitialContextFactoryDelegate.toNamingException(WLInitialContextFactoryDelegate.java:808)
+	at weblogic.jndi.WLInitialContextFactoryDelegate.pushSubject(WLInitialContextFactoryDelegate.java:697)
+	at weblogic.jndi.WLInitialContextFactoryDelegate.newContext(WLInitialContextFactoryDelegate.java:485)
+	at weblogic.jndi.WLInitialContextFactoryDelegate.getInitialContext(WLInitialContextFactoryDelegate.java:373)
+	at weblogic.jndi.Environment.getContext(Environment.java:319)
+	at weblogic.jndi.Environment.getContext(Environment.java:288)
+	at weblogic.jndi.WLInitialContextFactory.getInitialContext(WLInitialContextFactory.java:117)
+	at javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:684)
+	at javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:313)
+	at javax.naming.InitialContext.init(InitialContext.java:244)
+	at javax.naming.InitialContext.<init>(InitialContext.java:216)
+	at com.se.jndi.Store.main(Store.java:26)
+Caused by: java.lang.SecurityException: User: admin123, failed to be authenticated.
+	at weblogic.common.internal.RMIBootServiceImpl.authenticate(RMIBootServiceImpl.java:116)
+	at weblogic.common.internal.RMIBootServiceImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:701)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:527)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:523)
+	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
