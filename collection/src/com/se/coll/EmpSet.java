@@ -23,6 +23,8 @@ public class EmpSet {
 		Iterator i=hs.iterator();
 		while(i.hasNext()){
 			System.out.println(i.next());
+			System.out.println("dhana");
+			
 			
 			
 			
